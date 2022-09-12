@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,UAAU;EAC9B,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,MAAM;EAChB,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CACrB",
+    "sources": [
+        "appScreen.scss"
+    ],
+    "names": [],
+    "file": "appScreen.css"
+}

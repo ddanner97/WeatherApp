@@ -1,0 +1,29 @@
+.search-form {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  margin-top: 1.5rem;
+  filter: drop-shadow(0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+}
+
+.search-form * {
+  border-style: none;
+  background: #fefefe;
+  font-size: 1rem;
+}
+
+.search-form input {
+  border-radius: 5px 0 0 5px;
+  color: gray;
+  padding: 10px;
+}
+
+.search-form input:focus {
+  outline: none !important;
+}
+
+.search-form button {
+  border-radius: 0 5px 5px 0;
+  color: #CCD2E3;
+  cursor: pointer;
+}
+/*# sourceMappingURL=searchBar.css.map */

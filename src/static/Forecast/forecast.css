@@ -1,0 +1,20 @@
+.forecast-display-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+}
+
+.forecast-display-container h5 {
+  text-align: center;
+}
+
+.forecast-display-container li {
+  display: grid;
+  grid-template-rows: auto, 1rem;
+  list-style: none;
+  justify-items: center;
+  align-items: center;
+}
+/*# sourceMappingURL=forecast.css.map */
