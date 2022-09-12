@@ -2,6 +2,8 @@
 
 This minimalist weather app allows users to easily search locations and check the current weather and forecast for that area.
 
+Click here to use the application[https://weather-app-seven-ochre.vercel.app/]
+
 ## Project Description
 
 This project is a front-end application built using **React.js** and **scss** and leverages OpenWeatherMap's free api's for current weather as well the 5 day forecast
