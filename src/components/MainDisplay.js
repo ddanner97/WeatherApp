@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import WeatherIcon from './icons/WeatherIcon'
 import WeatherInfo from './WeatherInfo'
+import Loader from './icons/Loader'
 
 export default class MainDisplay extends Component {
 
@@ -89,11 +90,18 @@ export default class MainDisplay extends Component {
     render() {
         return (
             <div className="main-display-container">
-                <h2 className="main-display-name">
-                    {this.state.name}
-                </h2>
-                <WeatherIcon icon={this.state.icon} />
-                <WeatherInfo temp={this.state.temp} feelsLike={this.state.feelLike} humidity={this.state.humidity} />
+                {/* Ternary operator: If loading == false render loading, If error == render error, else render page */}
+                { !this.state.isLoaded ? <Loader/>
+                    : this.state.error ? <div>Error</div>
+                        :
+                        <div className="main-display-container">
+                            <h2 className="main-display-name">
+                                {this.state.name}
+                            </h2>
+                            <WeatherIcon icon={this.state.icon} />
+                            <WeatherInfo temp={this.state.temp} feelsLike={this.state.feelLike} humidity={this.state.humidity} />
+                        </div>
+                }
             </div>
         )
     }
