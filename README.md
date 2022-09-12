@@ -8,7 +8,7 @@ This project is a front-end application built using **React.js** and **scss**, t
 
 ### `Design`
 <img src="images/mock-components-1.png">
-<img src="images/images/mock-components-1.jpg">
+<img src="images/mock-components-1.jpg">
 
 
 ### `npm start`
