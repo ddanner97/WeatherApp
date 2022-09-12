@@ -22,8 +22,7 @@ export default class MainDisplay extends Component {
         }
         
     }
-
-    //So this is what is causing the infinite loop
+    
     componentDidMount() {
 
         fetch(
