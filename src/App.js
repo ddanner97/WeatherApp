@@ -2,6 +2,7 @@ import React from 'react'
 import SearchLocationForm from './components/SearchLocationForm'
 import MainDisplay from './components/MainDisplay';
 import Forecast from './components/Forecast';
+import './static/AppScreen/appScreen.css'
 
 class App extends React.Component {
 

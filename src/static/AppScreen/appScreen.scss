@@ -1,0 +1,9 @@
+.weather-app {
+    display: grid;
+    grid-template-rows: 5% 65% 30%;
+    width: 95vw;
+    grid-gap: 1.5rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}

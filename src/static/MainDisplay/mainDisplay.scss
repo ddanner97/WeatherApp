@@ -1,0 +1,15 @@
+.main-display-container {
+    display: grid;
+    grid-template-rows: auto, 1rem;
+    justify-items: center;
+    align-items: center;
+    // margin-top: 5rem;
+
+    img {
+        width: 8rem;
+    }
+
+    > .main-display-weather-info {
+        text-align: center;
+    }
+}

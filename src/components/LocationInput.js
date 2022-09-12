@@ -27,7 +27,7 @@ export default class LocationInput extends Component {
     render() {
         const location = this.state.location;
         return (
-            <form onSubmit={this.callSubmit}>
+            <form className="search-form" onSubmit={this.callSubmit}>
     
                 <input type="text" placeholder="Search Location" value={location} onChange={this.handleChange} />
                 <button type="submit" value="Submit"><SearchIcon/></button>

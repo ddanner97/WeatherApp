@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import LocationInput from './LocationInput'
+import '../static/SearchBar/searchBar.css'
 
 export default class SearchLocationForm extends React.Component {
 
@@ -23,7 +24,7 @@ export default class SearchLocationForm extends React.Component {
 
     render() {
         return (
-            <LocationInput className="searchLocationForm" handleSubmit={this.handleSubmit}/>
+            <LocationInput handleSubmit={this.handleSubmit}/>
         )
     }
 }

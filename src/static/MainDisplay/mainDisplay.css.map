@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACpB,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,UAAU;EAC9B,aAAa,EAAE,MAAM;EACrB,WAAW,EAAE,MAAM;CAUtB;;AAdD,AAOI,uBAPmB,CAOnB,GAAG,CAAC;EACA,KAAK,EAAE,IAAI;CACd;;AATL,AAWI,uBAXmB,GAWjB,0BAA0B,CAAC;EACzB,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "mainDisplay.scss"
+    ],
+    "names": [],
+    "file": "mainDisplay.css"
+}

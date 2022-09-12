@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import WeatherIcon from './icons/WeatherIcon'
 import WeatherInfo from './WeatherInfo'
 import Loader from './icons/Loader'
+import '../static/MainDisplay/mainDisplay.css'
 
 export default class MainDisplay extends Component {
 
@@ -22,7 +23,7 @@ export default class MainDisplay extends Component {
         }
         
     }
-    
+
     componentDidMount() {
 
         fetch(
@@ -88,7 +89,7 @@ export default class MainDisplay extends Component {
 
     render() {
         return (
-            <div className="main-display-container">
+            <div className="main-display">
                 {/* Ternary operator: If loading == false render loading, If error == render error, else render page */}
                 { !this.state.isLoaded ? <Loader/>
                     : this.state.error ? <div>Error</div>
