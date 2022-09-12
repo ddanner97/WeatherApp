@@ -4,7 +4,7 @@ This minimalist weather app allows users to easily search locations and check th
 
 ## Project Description
 
-This project is a front-end application built using **React.js** and **scss**, that also leverages OpenWeatherMap's free api's for current weather as well the 5 day forecast
+This project is a front-end application built using **React.js** and **scss** and leverages OpenWeatherMap's free api's for current weather as well the 5 day forecast
 
 ### `Design`
 <img src="images/mock-components-1.jpg">
