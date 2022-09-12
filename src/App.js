@@ -21,6 +21,7 @@ class App extends React.Component {
           <SearchLocationForm coordinates={(lat, lon) => this.setState({...this.state, coordinates: [lat, lon]})} appid={this.state.appid} />
           <MainDisplay coordinates={this.state.coordinates} appid={this.state.appid} />
           <Forecast coordinates={this.state.coordinates} appid={this.state.appid} />
+          <footer>@Damian Danner 2022</footer>
         </div>
       )
   }
