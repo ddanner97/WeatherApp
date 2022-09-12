@@ -9,8 +9,6 @@ export default class ForecastCard extends Component {
 
     render() {
 
-        console.log(this.props.data)
-
         return (
             <li className='forecast-day-card'>
                 <h5>{Math.round(this.props.data.main.temp_max)}</h5>
