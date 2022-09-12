@@ -1,4 +1,4 @@
-# Minimalist Weather App
+# Minimalist Weather App [V1 - Sept 12, 2022]
 
 This minimalist weather app allows users to easily search locations and check the current weather and forecast for that area.
 
