@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchLocationForm from './components/SearchLocationForm'
 import MainDisplay from './components/MainDisplay';
+import Forecast from './components/Forecast';
 
 class App extends React.Component {
 
@@ -13,16 +14,12 @@ class App extends React.Component {
     }
   }
 
-  //Filter FiveDayCast array to get times ending with 15:00:00
-  // const days = FiveDayCast.list.filter(day => {
-  //     return day.dt_txt.endsWith("15:00:00");
-  // })
-
   render() {
       return (
         <div className='weather-app'>
           <SearchLocationForm coordinates={(lat, lon) => this.setState({...this.state, coordinates: [lat, lon]})} appid={this.state.appid} />
           <MainDisplay coordinates={this.state.coordinates} appid={this.state.appid} />
+          <Forecast coordinates={this.state.coordinates} appid={this.state.appid} />
         </div>
       )
   }
