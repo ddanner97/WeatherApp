@@ -12,7 +12,7 @@ export default class SearchLocationForm extends React.Component {
     handleSubmit(location) {
 
         fetch(
-            `http://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${this.props.appid}`
+            `https://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${this.props.appid}`
         )
         .then(res => res.json())
         .then(resp => this.props.coordinates(resp[0].lat, resp[0].lon))
