@@ -2,7 +2,7 @@
 
 This minimalist weather app allows users to easily search locations and check the current weather and forecast for that area.
 
-Click here to use the application[https://weather-app-seven-ochre.vercel.app/]
+[Click here to use the application](https://weather-app-seven-ochre.vercel.app/)
 
 ## Project Description
 
