@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import WeatherIcon from './icons/WeatherIcon'
+import WeatherInfo from './WeatherInfo'
 
 export default class MainDisplay extends Component {
 
@@ -90,8 +92,8 @@ export default class MainDisplay extends Component {
                 <h2 className="main-display-name">
                     {this.state.name}
                 </h2>
-
-
+                <WeatherIcon icon={this.state.icon} />
+                <WeatherInfo temp={this.state.temp} feelsLike={this.state.feelLike} humidity={this.state.humidity} />
             </div>
         )
     }
