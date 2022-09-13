@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ForecastCard from './ForecastCard'
 import '../static/Forecast/forecast.css'
+import Loader from './icons/Loader'
 
 export default class Forecast extends Component {
 
@@ -67,11 +68,18 @@ export default class Forecast extends Component {
 
     render() {
         return (
-            <div className='forecast-display-container'>
-                {/* Render Days */}
-                {this.state.days.map((day, index) =>
-                    <ForecastCard data={day} key={index}/>
-                )}
+            <div>
+                {/* Ternary operator: If loading == false render loading, If error == render error, else render page */}
+                { !this.state.isLoaded ? <Loader/>
+                    : this.state.error ? <div>Error</div>
+                        :
+                        <div className="forecast-display-container">
+                            {/* Render Days */}
+                            {this.state.days.map((day, index) =>
+                                <ForecastCard data={day} key={index}/>
+                            )}
+                        </div>
+                }
             </div>
         )
     }
