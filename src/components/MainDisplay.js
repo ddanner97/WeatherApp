@@ -27,7 +27,7 @@ export default class MainDisplay extends Component {
     componentDidMount() {
 
         fetch(
-            `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coordinates[0]}&lon=${this.props.coordinates[1]}&units=imperial&appid=${this.props.appid}`
+            `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coordinates[0]}&lon=${this.props.coordinates[1]}&units=imperial&appid=${process.env.REACT_APP_APPID}`
         )
         .then(res => res.json())
         .then(resp => {
@@ -60,7 +60,7 @@ export default class MainDisplay extends Component {
         if (prevProp.coordinates[0] !== this.props.coordinates[0]) {
 
             fetch(
-                `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coordinates[0]}&lon=${this.props.coordinates[1]}&units=imperial&appid=${this.props.appid}`
+                `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coordinates[0]}&lon=${this.props.coordinates[1]}&units=imperial&appid=${process.env.REACT_APP_APPID}`
             )
             .then(res => res.json())
             .then(resp => {

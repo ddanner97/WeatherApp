@@ -9,7 +9,6 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        appid: process.env.REACT_APP_APPID,
         coordinates: [39.100105, -94.5781416],
     }
   }
@@ -17,9 +16,9 @@ class App extends React.Component {
   render() {
       return (
         <div className='weather-app'>
-          <SearchLocationForm coordinates={(lat, lon) => this.setState({...this.state, coordinates: [lat, lon]})} appid={this.state.appid} />
-          <MainDisplay coordinates={this.state.coordinates} appid={this.state.appid} />
-          <Forecast coordinates={this.state.coordinates} appid={this.state.appid} />
+          <SearchLocationForm coordinates={(lat, lon) => this.setState({...this.state, coordinates: [lat, lon]})} />
+          <MainDisplay coordinates={this.state.coordinates} />
+          <Forecast coordinates={this.state.coordinates} />
           <footer>@Damian Danner 2022</footer>
         </div>
       )
