@@ -6,11 +6,10 @@ import './static/AppScreen/appScreen.css'
 
 class App extends React.Component {
 
-
   constructor(props) {
     super(props);
     this.state = {
-        appid: "97c4d1fc6cbaa6a2d05424af07566123",
+        appid: process.env.REACT_APP_APPID,
         coordinates: [39.100105, -94.5781416],
     }
   }
