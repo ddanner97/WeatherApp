@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ForecastCard from './ForecastCard'
 import '../static/Forecast/forecast.css'
-import Loader from './icons/Loader'
 
 export default class Forecast extends Component {
 
@@ -70,7 +69,7 @@ export default class Forecast extends Component {
         return (
             <div>
                 {/* Ternary operator: If loading == false render loading, If error == render error, else render page */}
-                { !this.state.isLoaded ? <Loader/>
+                { !this.state.isLoaded ? <div>Loading</div>
                     : this.state.error ? <div>Error</div>
                         :
                         <div className="forecast-display-container">

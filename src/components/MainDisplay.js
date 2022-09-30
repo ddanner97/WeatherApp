@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import WeatherIcon from './icons/WeatherIcon'
 import WeatherInfo from './WeatherInfo'
-import Loader from './icons/Loader'
 import '../static/MainDisplay/mainDisplay.css'
 
 export default class MainDisplay extends Component {
@@ -16,6 +15,8 @@ export default class MainDisplay extends Component {
             lon: '',
             name: '',
             weather: '',
+            main: '',
+            desc: '',
             icon: '',
             temp: '',
             feelLike: '',
@@ -81,7 +82,7 @@ export default class MainDisplay extends Component {
                 console.error("there has been an issue with the GeoCode API Call", error)
                 this.setState({
                     isLoaded: true,
-                    error
+                    error: true
                 })
             })
         }
@@ -91,14 +92,14 @@ export default class MainDisplay extends Component {
         return (
             <div className="main-display">
                 {/* Ternary operator: If loading == false render loading, If error == render error, else render page */}
-                { !this.state.isLoaded ? <Loader/>
+                { !this.state.isLoaded ? <div>Loading</div>
                     : this.state.error ? <div>Error</div>
                         :
                         <div className="main-display-container">
                             <h2 className="main-display-name">
                                 {this.state.name}
                             </h2>
-                            <WeatherIcon icon={this.state.icon} />
+                            <WeatherIcon weather={this.state.weather} />
                             <WeatherInfo temp={this.state.temp} feelsLike={this.state.feelLike} humidity={this.state.humidity} />
                         </div>
                 }
