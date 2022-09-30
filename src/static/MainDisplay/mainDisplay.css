@@ -1,15 +1,37 @@
-.main-display-container {
-  display: grid;
-  grid-template-rows: auto, 1rem;
-  justify-items: center;
+.main-display {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.main-display-container img {
-  width: 8rem;
+.main-display .main-display-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: auto, 1rem;
+  color: #FEFAE0;
 }
 
-.main-display-container > .main-display-weather-info {
+.main-display .main-display-container h2 {
+  filter: drop-shadow(-0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.293));
+}
+
+.main-display .main-display-container .weather-icon i {
+  font-size: 5rem;
+  filter: drop-shadow(-0.1rem 0.15rem 0.15rem rgba(0, 0, 0, 0.293));
+}
+
+.main-display .main-display-container > .main-display-weather-info {
   text-align: center;
+}
+
+.main-display .main-display-container > .main-display-weather-info h3 {
+  filter: drop-shadow(-0.1rem 0.15rem 0.15rem rgba(0, 0, 0, 0.293));
+}
+
+.main-display .main-display-container > .main-display-weather-info h4 {
+  filter: drop-shadow(-0.1rem 0.15rem 0.15rem rgba(0, 0, 0, 0.293));
 }
 /*# sourceMappingURL=mainDisplay.css.map */

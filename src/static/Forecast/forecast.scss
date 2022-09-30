@@ -1,13 +1,21 @@
+.forecast {
+    
+    flex-grow: 1;
+    color: #FEFAE0;
+
+}
+
 .forecast-display-container {
+    flex-grow: 1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    // margin-top: 5rem;
     justify-content: center;
     align-items: center;
     grid-gap: 5px;
 
     h5 {
         text-align: center;
+        filter: drop-shadow(-.10rem .15rem .15rem rgba(0, 0, 0, 0.293));
     }
 
     li {
@@ -16,5 +24,11 @@
         list-style: none;
         justify-items: center;
         align-items: center;
+
+        .weather-icon {
+            i {
+                filter: drop-shadow(-.10rem .15rem .15rem rgba(0, 0, 0, 0.293));
+            }
+        }
     }
 }

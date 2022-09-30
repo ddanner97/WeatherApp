@@ -1,4 +1,10 @@
+.forecast {
+  flex-grow: 1;
+  color: #FEFAE0;
+}
+
 .forecast-display-container {
+  flex-grow: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
@@ -8,6 +14,7 @@
 
 .forecast-display-container h5 {
   text-align: center;
+  filter: drop-shadow(-0.1rem 0.15rem 0.15rem rgba(0, 0, 0, 0.293));
 }
 
 .forecast-display-container li {
@@ -16,5 +23,9 @@
   list-style: none;
   justify-items: center;
   align-items: center;
+}
+
+.forecast-display-container li .weather-icon i {
+  filter: drop-shadow(-0.1rem 0.15rem 0.15rem rgba(0, 0, 0, 0.293));
 }
 /*# sourceMappingURL=forecast.css.map */

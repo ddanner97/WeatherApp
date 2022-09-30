@@ -1,22 +1,31 @@
+:root {
+    --text-theme: #FEFAE0;
+}
+
+body {
+    background-color: #DDA15E;
+}
+
 .weather-app {
-    display: grid;
-    grid-template-rows: 5% 65% 30%;
-    width: 95vw;
-    grid-gap: 1.5rem;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 12px 0 12px;
+    height: 100vh;
+    max-width: 656px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 
     footer {
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        text-align: center;
-        bottom: 5px;
-        font-style: italic;
+        margin: auto;
+        color: #FEFAE0;
         font-size: 12px;
-        font-weight: 500;
+        padding-bottom: 1.5rem;
     }
+}
+
+@media (max-width: 662px) {
+
+    .weather-app {
+        padding: 12px 8px 12px;
+    }
+
 }
