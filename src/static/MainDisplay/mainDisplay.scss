@@ -18,10 +18,10 @@
 
         .weather-icon {
             i {
+                font-size: 5rem;
                 filter: drop-shadow(-.10rem .15rem .15rem rgba(0, 0, 0, 0.293));
             }
         }
-        
     
         > .main-display-weather-info {
             text-align: center;
