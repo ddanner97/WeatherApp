@@ -67,7 +67,7 @@ export default class Forecast extends Component {
 
     render() {
         return (
-            <div>
+            <div className="forecast">
                 {/* Ternary operator: If loading == false render loading, If error == render error, else render page */}
                 { !this.state.isLoaded ? <div>Loading</div>
                     : this.state.error ? <div>Error</div>

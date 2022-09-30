@@ -1,15 +1,39 @@
-.main-display-container {
-    display: grid;
-    grid-template-rows: auto, 1rem;
-    justify-items: center;
+.main-display {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    // margin-top: 5rem;
 
-    img {
-        width: 8rem;
+    .main-display-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-template-rows: auto, 1rem;
+        color: #FEFAE0;
+
+        h2 {
+            filter: drop-shadow(-.15rem .15rem .15rem rgba(0, 0, 0, 0.293));
+        }
+
+        .weather-icon {
+            i {
+                filter: drop-shadow(-.10rem .15rem .15rem rgba(0, 0, 0, 0.293));
+            }
+        }
+        
+    
+        > .main-display-weather-info {
+            text-align: center;
+
+            h3 {
+                filter: drop-shadow(-.10rem .15rem .15rem rgba(0, 0, 0, 0.293)); 
+            }
+
+            h4 {
+                filter: drop-shadow(-.10rem .15rem .15rem rgba(0, 0, 0, 0.293));
+            }
+        }
     }
 
-    > .main-display-weather-info {
-        text-align: center;
-    }
 }
